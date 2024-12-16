@@ -47,9 +47,9 @@
         </footer>
 
         <script>
-            //  service are supported
+           
             if ('serviceWorker' in navigator) {
-                //  load event 
+                
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('/service-worker.js');
                 });

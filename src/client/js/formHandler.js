@@ -5,17 +5,9 @@ form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
-
-    // Get client web adress from form 
- 
     const clientURL = document.getElementById('name').value;
-    
- 
-        // If  valid, send to server
       if(checkUrlValid(clientURL)){
-        
         submitAddToServer('/api', { url : clientURL })
-      
         .then(function (reso) {
             console.log("Server Response now ", reso)
             // updating 
@@ -34,7 +26,7 @@ function handleSubmit(event) {
     
 }
 
-//  send to server all data entered and valid after checking 
+
 const submitAddToServer = async (url = "", data = {}) => {
     console.log('analyzing now :' , data)
     try{

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- my meta code -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Test</title>
+        <link rel="stylesheet" href="/styles/resets.scss">
+        <link rel="stylesheet" href="/styles/base.scss">
+        <link rel="stylesheet" href="/styles/header.scss">
+        <link rel="stylesheet" href="/styles/form.scss">
+        <link rel="stylesheet" href="/styles/footer.scss"> 
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form id="webAddForm">
+                    <input id="name" type="text" name="url" placeholder="Enter URL" required>
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+                
+            </section>
+
+            <section>
+                <strong>Form Results are :</strong>
+                <div id="plarity_txt"></div>
+                <div id="agreement_txt"></div>
+                <div id="subjectivity_txt"></div>
+                <div id="confidence_txt"></div>
+                <div id="irony_txt"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+        <script>
+            //  service are supported
+            if ('serviceWorker' in navigator) {
+                //  load event 
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

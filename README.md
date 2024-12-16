@@ -29,6 +29,6 @@ We will build a web tool that allows users to run Natural Language Processing (N
 - DOM
 - API
 - node
-- scss
+- SCSS
 
 

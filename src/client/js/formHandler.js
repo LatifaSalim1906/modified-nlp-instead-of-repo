@@ -10,7 +10,7 @@ function handleSubmit(event) {
         submitAddToServer('/api', { url : clientURL })
         .then(function (reso) {
             console.log("Server Response now ", reso)
-            // updating 
+       
             document.getElementById("polarity_txt").innerHTML = "polarity : " + reso.score_tag;
             document.getElementById("agreement_txt").innerHTML = "agreement : " + reso.agreement;
             document.getElementById("subjectivity_txt").innerHTML = "subjectivity : " + reso.subjectivity;
@@ -25,7 +25,6 @@ function handleSubmit(event) {
       }
     
 }
-
 
 const submitAddToServer = async (url = "", data = {}) => {
     console.log('analyzing now :' , data)

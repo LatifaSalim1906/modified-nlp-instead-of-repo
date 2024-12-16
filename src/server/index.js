@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 })
 
 
-// POST 
+
 app.post('/api', async function(req, res) {
     url = req.body.url
    
@@ -43,7 +43,7 @@ app.post('/api', async function(req, res) {
 
 
 
-// port for incoming requests
+
 app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })

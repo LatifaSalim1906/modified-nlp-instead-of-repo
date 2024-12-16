@@ -19,7 +19,7 @@ function handleSubmit(event) {
         .then(function (reso) {
             console.log("Server Response now ", reso)
             // updating 
-            document.getElementById("plarity_txt").innerHTML = "plarity : " + reso.score_tag;
+            document.getElementById("polarity_txt").innerHTML = "polarity : " + reso.score_tag;
             document.getElementById("agreement_txt").innerHTML = "agreement : " + reso.agreement;
             document.getElementById("subjectivity_txt").innerHTML = "subjectivity : " + reso.subjectivity;
             document.getElementById("confidence_txt").innerHTML = "confidence : " + reso.confidence;

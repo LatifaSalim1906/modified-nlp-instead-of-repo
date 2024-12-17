@@ -15,7 +15,8 @@ function handleSubmit(event) {
             document.getElementById("agreement_txt").innerHTML = "agreement : " + reso.agreement;
             document.getElementById("subjectivity_txt").innerHTML = "subjectivity : " + reso.subjectivity;
             document.getElementById("confidence_txt").innerHTML = "confidence : " + reso.confidence;
-            document.getElementById("irony_txt").innerHTML = "irony : " + reso.irony;
+            document.getElementById("snippet_txt").innerHTML = "snippet : " + reso.innerHTML;
+            
 
         })
 
